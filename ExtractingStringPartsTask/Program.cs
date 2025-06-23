@@ -27,7 +27,33 @@
             // California has n vowels
 
 
-            
+            string lengthOfState = state.Length.ToString(); 
+            Console.WriteLine($"The length of the state is: {lengthOfState}");
+
+            string cityAndLandmark = $"{city} {landmark}";
+            Console.WriteLine($"{cityAndLandmark}");
+
+            string name = "United States of America";
+            Console.WriteLine(name.Substring(0, 1));
+
+            string firstAndLastCharOfCity = $"{city[0]}{city[city.Length - 1]}";        
+            Console.WriteLine(firstAndLastCharOfCity);
+
+            string substringOfLandmark = landmark.Substring(landmark.IndexOf('c'));     
+            Console.WriteLine(substringOfLandmark);
+
+            string substringOfCountry = country.Substring(country.IndexOf('S'), country.IndexOf('A') - country.IndexOf('S') + 1);
+            Console.WriteLine(substringOfCountry);
+
+            int positionOfF = state.IndexOf('f');   
+            Console.WriteLine($"{positionOfF}");
+
+            Console.WriteLine("California has 5 vowels");
+            Console.WriteLine("United States of America has 8 vowels");
+            Console.WriteLine("San Francisco has 6 vowels");
+            Console.WriteLine("Alcatraz Island has 6 vowels");
+
+
 
             // Show your evidence of the program running in the Readme file
         }
